@@ -5,7 +5,15 @@ public class DoubleUp {
      */
    public static String doubleUp(String s) {
       // TODO: Fill in this function
-      return null;
+       //
+       StringBuilder doubled = new StringBuilder();
+       for (int i=0; i<s.length(); i++){
+           char character = s.charAt(i);
+          doubled.append(character);
+          doubled.append(character);
+
+       }
+       return doubled.toString();
    }
    
    public static void main(String[] args) {
